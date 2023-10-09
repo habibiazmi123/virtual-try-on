@@ -1,0 +1,5 @@
+export const CAT_EARRINGS = 'earrings'
+export const CAT_BRACELETS = 'bracelets'
+export const CAT_RINGS = 'rings'
+export const CAT_BANGLES = 'bangles'
+export const CAT_NECKLACES = 'necklaces'

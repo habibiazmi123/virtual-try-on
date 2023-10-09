@@ -1,0 +1,6 @@
+export const VIEW_ON_MODEL = 'view_on_model'
+export const VIEW_ON_ME = 'view_on_me'
+export const VIEW_ON_DETAIL = 'view_on_detail'
+export const VIEW_ON_COMPARE = 'view_on_compare'
+export const STATE_ON = 'state_on'
+export const STATE_OFF = 'state_off'
