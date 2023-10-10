@@ -9,6 +9,7 @@ import useProductStore from '../stores/useProductStore'
 
 function DragUseSpring() {
   const imageStackLS = useProductStore(s => s.productStackList)
+  const index_product = useProductStore(s => s.index_product)
   const index_selected_model = useModelStore(s => s.index_selected)
   const [valimgCtrl, setvalimgCtrl] = React.useState(0)
   const [__, setViewAble] = React.useState(false)
@@ -169,7 +170,7 @@ function DragUseSpring() {
 
   // init product image:
   useEffect(() => {
-    const indexx = 0
+    const indexx = index_product
 
     const dragimage =
       current_cat === CAT_RINGS
@@ -222,7 +223,7 @@ function DragUseSpring() {
     document.getElementById('box-title-product').textContent = productname
     document.getElementById('box-price-product').textContent = productprice
     // localStorage.setItem('indexProductStack', indexx)
-    setIndexProduct(indexx)
+    // setIndexProduct(indexx)
   }, [
     current_cat,
     imageStackLS.ProductImage.Bangles,

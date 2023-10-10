@@ -30,6 +30,7 @@ import { FaceHolderSolidSvg } from '../faceholder'
 
 export default function Footer() {
   const params = useModelStore(s => s.footer_params)
+  const model_id = useModelStore(s => s.index_selected)
   const view_mode = useModelStore(s => s.view_mode)
   const setViewMode = useModelStore(s => s.setViewMode)
   const img_list = useModelStore(s => s.footer_params.img_list)
@@ -38,6 +39,7 @@ export default function Footer() {
   const productID = params.productID
 
   const cat = useParamsStore(s => s.cat)
+  const id_cat = useParamsStore(s => s.id_cat)
   const customer_id = useParamsStore(s => s.customer_id)
   const login = useParamsStore(s => s.login)
   const index_product = useProductStore(s => s.index_product)
@@ -107,29 +109,9 @@ export default function Footer() {
     setStackState(STATE_ON)
   }
 
-  //on compare function
-  function onCompare() {
-    setViewMode(VIEW_ON_COMPARE)
-    setImgList({
-      image: ['./compareimage/coin_500.png', './compareimage/coin_1000.png'],
-    })
-  }
-
   function onDetail() {
-    if (cat === CAT_RINGS) {
-      setImgList(KoordinatsModelsFooter.KoordinatRings.model.image)
-    } else if (cat === CAT_BRACELETS) {
-      setImgList(KoordinatsModelsFooter.KoordinatBracelets.model.image)
-    } else if (cat === CAT_EARRINGS) {
-      setImgList(KoordinatsModelsFooter.KoordinatEarrings.model.image)
-    } else if (cat === CAT_BANGLES) {
-      setImgList(KoordinatsModelsFooter.KoordinatBangles.model.image)
-    } else if (cat === CAT_NECKLACES) {
-      setImgList(KoordinatsModelsFooter.KoordinatNecklaces.model.image)
-    }
-
-    setViewMode(VIEW_ON_DETAIL)
-    setStackState(STATE_ON)
+    const url = `/detail?cat=${cat}&login=${login}&id_cat=${id_cat}&model_id=${model_id}&product_id=${index_product}`
+    window.open(url, '_blank')
   }
 
   const addtobag = useCallback(() => {
