@@ -111,7 +111,7 @@ export default function Footer() {
 
   function onDetail() {
     const url = `/detail?cat=${cat}&login=${login}&id_cat=${id_cat}&model_id=${model_id}&product_id=${index_product}`
-    window.open(url, '_blank')
+    window.open(url, 'formpopup', 'toolbar=no,scrollbars=yes,resizable=no,top=500,left=500,width=3800,height=4000')
   }
 
   const addtobag = useCallback(() => {
