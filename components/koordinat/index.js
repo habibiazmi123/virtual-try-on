@@ -19,7 +19,7 @@ export const Koordinats = {
         //========================================
         widthBox: [82, 68, 76, 82, 82],
         topBox: [37, 40, 44, 44, 40], // ⭐️
-        right: [-40, -50, -44, -44.5, -36], // ⭐️
+        right: [-38, -50, -44, -44.5, -36], // ⭐️
         bottom: [-105, -60, -40, 30, -60], // ⭐️
         marginLeft: [-4.5, -7.5, -6.5, -7.5, -11.5],
         marginTop: [-9, -6, -5, -2, -4],
@@ -50,7 +50,7 @@ export const Koordinats = {
       scale: [0.05, 1, 1, 1, 1],
       scaleMobile: [0.05, 1.5, 1, 3, 3],
       transformDesktop: [
-        'translate(0px, 0px) rotate(2deg)',
+        'translate(0px, 0px) rotate(4deg)',
         'translate(0px, 0px) rotate(2deg)',
         'translate(0px, 0px) rotate(0deg)',
         'translate(0px, 0px) rotate(6deg)',
@@ -76,9 +76,9 @@ export const Koordinats = {
         rightCapture: [-63, -90, -52, -69.7, -53],
         bottomCapture: [8, 0, 0, -3, 0],
         //========================================
-        widthBox: [82, 76, 76, 82, 82],
-        topBox: [58, 84, 47, 60, 60], // ⭐️
-        right: [-15, -62, -25, -99, -69], // ⭐️
+        widthBox: [81, 76, 76, 82, 90],
+        topBox: [64, 84, 47, 60, 60], // ⭐️
+        right: [-20, -62, -25, -99, -62], // ⭐️
         bottom: [0, 0, -1, 0, -1],
         marginLeft: [-4.5, -7.5, -6.5, -7.5, -11.5],
         marginTop: [-9, -6, -5, -2, -4],
